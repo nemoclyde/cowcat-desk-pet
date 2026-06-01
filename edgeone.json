@@ -1,0 +1,31 @@
+{
+  "functions": {
+    "routes": [
+      { "pattern": "/api/ping", "script": "api/ping.ts" },
+      { "pattern": "/api/debug", "script": "api/debug.ts" },
+      { "pattern": "/api/speak", "script": "api/speak.ts" },
+      { "pattern": "/api/internal/generate", "script": "api/internal/generate.ts" },
+      { "pattern": "/api/admin/auth", "script": "api/admin/auth.ts" },
+      { "pattern": "/api/admin/auth/refresh", "script": "api/admin/auth.ts" },
+      { "pattern": "/api/admin/password", "script": "api/admin/password.ts" },
+      { "pattern": "/api/admin/test-crud", "script": "api/admin/test-crud.ts" },
+      { "pattern": "/api/admin/prompts", "script": "api/admin/prompts.ts" },
+      { "pattern": "/api/admin/prompts/*", "script": "api/admin/prompts.ts" },
+      { "pattern": "/api/admin/corpus", "script": "api/admin/corpus.ts" },
+      { "pattern": "/api/admin/corpus/*", "script": "api/admin/corpus.ts" },
+      { "pattern": "/api/admin/settings", "script": "api/admin/settings.ts" },
+      { "pattern": "/api/admin/generate", "script": "api/admin/generate.ts" },
+      { "pattern": "/api/admin/logs", "script": "api/admin/logs.ts" },
+      { "pattern": "/api/admin/logs/export", "script": "api/admin/logs.ts" },
+      { "pattern": "/api/admin/logs/*", "script": "api/admin/logs.ts" },
+      { "pattern": "/api/admin/content", "script": "api/admin/content.ts" }
+    ],
+    "kv_bindings": {
+      "CACHE": "cowcat_cache",
+      "PROMPTS": "cowcat_prompts",
+      "CORPUS": "cowcat_corpus",
+      "SETTINGS": "cowcat_settings",
+      "LOGS": "cowcat_logs"
+    }
+  }
+}
